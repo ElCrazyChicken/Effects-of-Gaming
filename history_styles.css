@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 60px auto 1fr 60px;
+	grid-gap: 25px;
+	background-color: #e2edff;
+	
+	grid-template-areas:
+		
+	" . nav nav . "
+	" . header header . "
+	" . albertoinfo albertoinfo . "
+	" . gameinfo codeacademy . "
+	" . footer footer . ";
+	
+	
+}
+
+.grid > div {
+
+	padding: 1em;
+	color: aliceblue;
+	font-size: 17px;
+	border: #FFFFFF solid;
+	
+} /*affects all the divs in the grid*/
+
+.grid >div:nth-child(odd){
+	
+	background: #20345E;
+	
+} 
+
+.grid > div:nth-child(even){
+	
+	background: #205e4a;
+	
+}
+
+.grid > div:nth-child(2){background: gray;}
+
+.alberto {
+	
+	grid-area: alberto;
+	justify-self: stretch;
+	height: auto;
+	
+	
+	
+} /*picture div*/
+
+.albertoinfo {
+	
+	grid-area: albertoinfo;
+	
+	
+} /*random quote or fact about alberto*/
+
+.gameinfo {
+	
+	grid-area: gameinfo;
+	
+	
+} /*picture div*/
+
+.codeacademy {
+	
+	grid-area: codeacademy;
+	
+	
+} /*random quote or fact about fernando*/
+
+.footer {
+	
+	grid-area: footer;
+	
+	
+} /*footer*/
+
+.nav {
+	
+	grid-area: nav;
+	display: flex;
+	justify-self: center;
+	text-align: right;
+	height: 40px;
+	
+	
+} /*navigation bar*/
+
+.picone {
+	
+	display: grid;
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+	max-height: 400px;
+	margin: auto;
+	
+	
+} /*Alberto's Picture*/
+
+.pictwo {
+	
+	display: grid;
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+	max-height: 400px;
+	margin: auto;
+	
+	
+}
+
+.header {
+	
+	grid-area: header;
+	justify-self: stretch;
+	
+	
+	
+} /*header*/
+
+.button {
+	border: gray solid;
+	padding: 8px 30px;
+	border-radius: 30px;
+	color: white;
+	background: #205E4A;
+	text-decoration: none;
+	transition-duration: 350ms;
+	
+} /*nav buttons*/
+
+.button:hover {
+	
+	border: white solid;
+	padding: 12px 38px;
+	transition-duration: 350ms;
+	
+}
+
+.headerpic {
+	
+	display: grid;
+	width: 100%;
+	height: auto;
+	
+} /*header image*/
+
+.pong {
+	
+	width: 100%;
+	
+}
